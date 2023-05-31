@@ -13,11 +13,12 @@ async function bootstrap() {
     .setDescription('The API description')
     .setVersion('1.0')
     .addTag('cats')
+    .addServer('http://localhost:4000')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
   const outputPath = path.resolve(process.cwd(), 'openapi.yml');
   writeFileSync(outputPath, dump(document, {}));
-  await app.listen(3000);
+  await app.listen(4000);
 }
 bootstrap();

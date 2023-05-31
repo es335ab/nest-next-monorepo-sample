@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generate-typescript-axios": "openapi-generator-cli generate -g typescript-axios -i ../backend/openapi.yml -o ./generated/typescript-axios"
+  },
+  "dependencies": {
+    "@types/node": "20.2.5",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.6.0"
+  }
+}
