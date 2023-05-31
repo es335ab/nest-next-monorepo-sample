@@ -1,0 +1,14 @@
+{
+  "name": "nest-next-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "es335ab",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/frontend",
+      "packages/backend"
+    ]
+  }
+}
